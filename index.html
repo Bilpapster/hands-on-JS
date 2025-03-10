@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Audiowide">
+    <title>JavaScript Workshop CSD AUTh</title>
+  </head>
+  <body>
+  	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title">To-Do!</h1>
+          <p>List your To-dos✅, Unleash your productivity!📈</p>
+          <form id="search-todos">
+            <input type="text" placeholder="Search to-dos..." />
+          </form>
+	    	</div>
+	    </header>
+	    <div id="todo-list">
+	    	<h2 class="title">Unfinished To-dos</h2>
+	    	<ul>
+	    		<li>
+	    			<span class="name">Learn vanilla JS</span>
+	    			<span class="mark-done">Mark Done</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Create a to-do application with vanilla JS</span>
+	    			<span class="mark-done">Mark Done</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Learn Svelte</span>
+	    			<span class="mark-done">Mark Done</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Create an awesome application with Svelte</span>
+	    			<span class="mark-done">Mark Done</span>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <form id="add-todo">
+        <input type="checkbox" id="hide" />
+        <label for="hide">Hide all to-dos</label>
+	    	<input type="text" placeholder="Add a to-do..." />
+	    	<button>Add</button>
+	    </form>
+    </div>
+  </body>
+  <script src="todoApp.js"></script>
+</html>

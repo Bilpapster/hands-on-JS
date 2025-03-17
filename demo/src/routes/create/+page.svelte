@@ -12,40 +12,6 @@
     }
 </script>
 
-<div class="card-container">
-  <ion-card class="task-card">
-    <ion-input
-      label="Title"
-      placeholder="Task title"
-      value={title}
-      on:ionInput={(e) => title = e.detail.value}
-      class="glass-input"
-    />
-
-    <ion-input
-      label="Due Date"
-      type="date"
-      value={date}
-      on:ionInput={(e) => date = e.detail.value}
-      class="glass-input"
-    />
-
-    <ion-select
-      class="glass-input"
-      label="Category"
-      placeholder="Select category"
-      value={category}
-      on:ionChange={(e) => category = e.detail.value}
-    >
-      <ion-select-option value="Work">Work</ion-select-option>
-      <ion-select-option value="Personal">Personal</ion-select-option>
-      <ion-select-option value="Other">Other</ion-select-option>
-    </ion-select>
-
-    <ion-button expand="block" color="success" on:click={createDetailedTask} class="ion-margin-top">Create Task</ion-button>
-    <ion-button expand="block" color="medium" on:click={() => goto('/')} class="ion-margin-top">Cancel</ion-button>
-  </ion-card>
-</div>
   
   
 <style>

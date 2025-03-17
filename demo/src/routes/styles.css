@@ -1,0 +1,62 @@
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f4f4f8;
+    padding: 1rem;
+}
+
+.card-container {
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    background: white;
+    display: flex;
+    min-height: 50%;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.header h1 {
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.header ion-icon {
+    font-size: 3rem;
+    color: #3880ff;
+}
+
+.search-container {
+    padding: 0 1rem;
+}
+
+ion-searchbar {
+    --background: rgba(255, 255, 255, 0.15);
+    --backdrop-filter: blur(8px);
+    --border-radius: 12px;
+    --color: #333;
+    --placeholder-color: #aaa;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+ion-button {
+    margin: 1rem;
+    width: fit-content;
+    align-self: center;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 0.5rem;
+    --padding-start: 12px;
+    --padding-end: 12px;
+    --border-radius: 12px;
+}
